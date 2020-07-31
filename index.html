@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 India</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body style="background-color: #0b0b0b">
+    <div class="contaoner-fluid p-3  text-center my-3" style="
+    box-shadow: 0px 0px 10px 1px #ffffff"> 
+        <h1 style="color:#da70d6c4">Covid-19 India Tracker</h1>
+    </div>
+    <div class="container my-5 " >
+        <div class="row text-center"style="margin-bottom: 25px;" >
+            <div class="col-3 text-warning" style="border: 1px solid #ffc107">
+                <h5>Confirmed Cases</h5>
+                <p id="confirmed"></p>
+            </div>
+            <div class="col-3 text-info" style="border: 1px solid #17a2b8">
+                <h5>Active Cases</h5>
+                <p id="active"></p>
+            </div>
+            <div class="col-3 text-success" style="border: 1px solid #28a745">
+                <h5>Recovered Cases</h5>
+                <p id="recovered"></p>
+            </div>
+            <div class="col-3 text-danger" style="border: 1px solid #dc3545">
+                <h5>Deceasses Cases</h5>
+                <p id="deaths"></p>
+            </div>
+        </div>
+        <h1 style="text-align: center ; color: aqua">Statewise Data  </h1>
+        <canvas id="mychart" style="margin-top: 10px;"> </canvas>
+        <h1 style="text-align: center ; color: aqua">Datewise Data  </h1>
+        <canvas id="datewisechart" style="margin-top: 10px;"></canvas>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="script.js"></script>
+</html>
