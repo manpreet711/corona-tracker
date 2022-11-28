@@ -1,6 +1,6 @@
 // to execute when all the elements of html is loaded
 $(document).ready(function(){
-    const url = "https://api.covid19india.org/data.json"
+    const url = "https://data.covid19india.org/data.json"
     $.getJSON(url,function(data){
         console.log(data);
         // variable decleration
